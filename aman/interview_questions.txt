@@ -1,0 +1,37 @@
+1. how to migrate two databases in django. like oracle and postgresql - command(python manage.py migrate --database=default
+ and python manage.py migrate --database=oracle)
+2. signal django - signal are using some trigger action when event call like if user will signup then automatically create profile (post_save, pre_save)
+3. lambda - its a  anonymous function which have any number of argument but one expression
+4. write class and constructor syntax example 
+5. TRANSactions databases managed. -  import transactions and use with transactons.atomic() will manage our transaction rolllback automatically 
+6. signals - 
+7. middleware - Middleware in Django is like a layer that sits between the web server and your view (the logic of your web app). It processes incoming requests before they reach your view and processes outgoing responses before they are sent back to the client.
+8. status code all 
+9. put and patch - PUT: "It updates the entire resource, so you have to send all the data even if you only change one part."
+    PATCH: "It only updates the parts of the resource you specify, which makes it more efficient for small changes."
+10. redis and celery - 
+11. microservices authenticate how  - 
+12. get and filter django orm - 
+13. fast api debug false orm why using
+14. Write a program that simulates a simple shopping cart system. The program should have a class Product that represents a product and provides methods for getting and setting the product's name, price, and quantity. The program should also have a class Cart that represents a shopping cart and provides methods for adding products to the cart, removing products from the cart, and calculating the total cost of the products in the cart.
+15. generators and decorators - 
+16.  swallow copy and deep copy - 
+17. pep8 - readibility and consistency python enhancement proposal
+18. if __name__==__maine___ why ? - The line if __name__ == "__main__": is used in Python to check if the script is being run directly or imported as a module.
+19. find most present character string = "abaf334dddbvvdddad5509" 
+20. how differ django , flask and fastApi? 
+21. mysql 
+22. write decorators example
+23. acid properties explain 
+24. transaction in db 
+25. Docker
+26. list comparison and lambda
+27. sql
+
+task:
+For Aman: IN dango project create a single app where you create the multiple views.py fuiles
+
+
+note:
+tommorow need to follow up multiple views task interview.
+tommorow need to follow up highbrow company next round 

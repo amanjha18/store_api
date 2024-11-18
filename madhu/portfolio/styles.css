@@ -1,0 +1,377 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #cdc7d9, #b3b3c8);
+    color:#080707;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color:#080707;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #4e4366, #232346);
+    color: #fff;
+    text-align: center;
+}
+
+#hero .highlight {
+    color: #f39c12;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #e67e22;
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(to right, #0a0a0a, #2c2c57);
+    padding: 4rem 2rem;
+    color: #333;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background elements */
+.about-section::before,
+.about-section::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+    animation: float 8s ease-in-out infinite;
+}
+
+.about-section::before {
+    top: -50px;
+    left: -50px;
+}
+
+.about-section::after {
+    bottom: -50px;
+    right: -50px;
+}
+
+/* Headings and Text */
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#fff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about-section .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Float animation for decorative elements */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+/* Projects Section */
+#projects {
+    background: linear-gradient(to right, #4e4366, #232346);
+    padding: 2rem 1rem;
+    color: #fff;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.project-details {
+    padding: 1rem;
+}
+
+.project-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.project-details p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #6a11cb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project-btn:hover {
+    background: #2575fc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Experience Section */
+.exp{
+    color: #080707;
+}
+#experience {
+    color: #fff;
+    background: linear-gradient(to right, #cdc7d9, #b3b3c8);
+    padding: 2rem 1rem;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background: linear-gradient(to right, #211834, #1f1f20);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #f39c12;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: #f39c12;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-style: italic;
+}
+
+/* Hero Section Layout */
+.running-text-section {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 2rem;
+    min-height: 50vh;
+    overflow: hidden; /* Hide overflow for scrolling text */
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-wrapper {
+    flex: 2;
+    white-space: nowrap;
+    overflow: hidden; /* Ensure text scrolls properly */
+    padding-left: 2rem;
+}
+
+.text-wrapper h1 {
+    font-size: 1.8rem;
+    animation: scrollText 10s linear infinite; /* Smooth scrolling animation */
+}
+#contact{
+    background: linear-gradient(to right, #cdc7d9, #b3b3c8);
+
+}
+
+/* Animation for running text */
+@keyframes scrollText {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        
+    }
+    .about-section h2 {
+        font-size: 2rem;
+        color:#fff;
+    }
+
+    .about-section .about-text {
+        font-size: 1rem;
+    }
+    .running-text-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-bottom: 1rem;
+    }
+
+    .text-wrapper {
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        padding: 1rem 0.5rem;
+    }
+
+    .timeline-date {
+        font-size: 0.8rem;
+    }
+
+}
+
